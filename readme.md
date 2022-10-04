@@ -8,7 +8,7 @@ Access the layout
 
 Access the site
 
-[> Open site](lp-afiliados.surge.sh)
+[> Open site](https://lp-afiliados.surge.sh)
 
 ## Building
 
