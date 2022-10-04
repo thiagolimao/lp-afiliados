@@ -17,6 +17,10 @@
         padding-top:  calc($pad-space/3);
         padding-bottom: calc($pad-space/5);
     }
+    .container-fluid
+    {
+        padding-left:  calc($pad-space/2);
+    }
     h1.logo {
         img { 
             display: inline-flex;
