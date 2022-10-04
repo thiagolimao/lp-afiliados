@@ -1,0 +1,28 @@
+{
+    "jquery": {
+        "src": [
+            "./node_modules/jquery/dist/jquery.min.js",
+            "./node_modules/jquery/dist/jquery.min.map"
+        ],
+        "dest": "assets/vendor/jquery/",
+        "js_link": "assets/vendor/jquery/jquery.min.js"
+    },
+    "bootstrap": {
+        "src": "./node_modules/bootstrap/dist/**/*",
+        "dest": "assets/vendor/bootstrap/",
+        "css_link": "assets/vendor/bootstrap/css/bootstrap.min.css",
+        "js_link": "assets/vendor/bootstrap/js/bootstrap.min.js"
+    },
+    "aos": {
+        "src": "./node_modules/aos/dist/**/*",
+        "dest": "assets/vendor/aos/",
+        "css_link": "assets/vendor/aos/aos.css",
+        "js_link": "assets/vendor/aos/aos.js"
+    },
+    "owl-carousel": {
+        "src": "./node_modules/owl.carousel/dist/**/*",
+        "dest": "assets/vendor/owl-carousel/",
+        "css_link": "assets/vendor/owl-carousel/assets/owl.carousel.min.css",
+        "js_link": "assets/vendor/owl-carousel/owl.carousel.min.js"
+    }
+}
