@@ -12,6 +12,14 @@
     text-decoration: none;
     border-radius: 3.8125rem;
 
+    transition: all .2s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:not(:disabled):not(.disabled):active {
+        transform: scale(1.1);
+    }
+
     @media only screen and (min-width: 1200px) {
         font-size: 1.625rem;
         padding-top: 0.525rem;
@@ -44,9 +52,9 @@
     &:hover,
     &:active,
     &:not(:disabled):not(.disabled):active {
-        background-color: $white;
+        background-color: $primary;
       border-color: $primary;
-      color: $primary;
+      color: $white;
     }
 
     &:focus,
@@ -63,9 +71,9 @@
     &:hover,
     &:active,
     &:not(:disabled):not(.disabled):active {
-        background-color: $white;
+        background-color: $secondary;
       border-color: $secondary;
-      color: $secondary;
+      color: $white;
     }
 
     &:focus,

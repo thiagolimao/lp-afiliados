@@ -13,7 +13,7 @@
     }
 
     header.section-title {
-        @media only screen and (max-width: 767.99px) {
+        @media only screen and (max-width: 767.98px) {
             margin-bottom: 0;
             padding: 0 1.2rem;
         }
@@ -71,7 +71,7 @@
                 @media only screen and (min-width: 768px) and (max-width: 991.99px) {
                     font-size: 1.825rem;
                 }
-                @media only screen and (max-width: 767.99px) {
+                @media only screen and (max-width: 767.98px) {
                     font-size: 0.975rem;
                 }
                 small {
@@ -87,7 +87,7 @@
                     @media only screen and (min-width: 768px) and (max-width: 991.99px) {
                         font-size: 1.425rem;
                     }
-                    @media only screen and (max-width: 767.99px) {
+                    @media only screen and (max-width: 767.98px) {
                         font-size: 0.975rem;
                         span {
                             display: none;
@@ -114,19 +114,12 @@
         + article {
             margin-top: 2.5rem;
             margin-bottom: 2.5rem;
-            @media only screen and (max-width: 767.99px) {
+            @media only screen and (max-width: 767.98px) {
                 margin-top: 2rem;
             }
         }
     }
     footer {
         margin-bottom: -30px;
-        .btn-secondary {
-            &:hover,
-            &:active,
-            &:not(:disabled):not(.disabled):active {
-                background-color: $primary;
-            }
-        }
     }
 }

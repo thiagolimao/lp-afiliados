@@ -23,7 +23,7 @@
     }
 
 
-    @media only screen and (max-width: 767.99px) {
+    @media only screen and (max-width: 767.98px) {
         background-image: url('../img/bg-assistencia-mob.png');
         min-height: 100vh;
         align-items: center;
@@ -68,7 +68,7 @@
                     padding: 1.25rem;
                     align-items: center;
                     gap: 1rem;
-                    @media only screen and (max-width: 767.99px) {
+                    @media only screen and (max-width: 767.98px) {
                         height: 115px;
                     }
                 }
@@ -80,7 +80,7 @@
                     }
                 }
                 .card-title {
-                    @media only screen and (max-width: 767.99px) {
+                    @media only screen and (max-width: 767.98px) {
                         font-size: 0.975rem;
                     }
                     @media only screen and (max-width: 375px) {
@@ -88,7 +88,7 @@
                     }
                 }
                 .card-text {
-                    @media only screen and (max-width: 767.99px) {
+                    @media only screen and (max-width: 767.98px) {
                         font-size: 0.875rem;
                     }
                     @media only screen and (max-width: 375px) {
