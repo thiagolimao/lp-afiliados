@@ -1,0 +1,19 @@
+{% extends "template.html" %}
+
+{% set page ='home' %}
+
+{% block meta %}
+<title>lorem_title</title>
+{% endblock %}
+
+{% block content %}
+
+{% include "parts/home/hero.html" %}
+
+<main id="main">
+    {% include "parts/home/porque-section.html" %}
+    {% include "parts/home/coberturas-section.html" %}
+    {% include "parts/home/assistencias-section.html" %}
+</main><!-- End #main -->
+
+{% endblock %}
