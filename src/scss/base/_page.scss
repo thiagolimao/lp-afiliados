@@ -38,8 +38,7 @@ body {
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
-section,
-#footer {
+section{
     position: relative;
     padding-top:  calc($pad-space/2);
     padding-bottom: calc($pad-space/2);

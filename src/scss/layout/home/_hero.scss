@@ -6,7 +6,7 @@
     align-items: center;
 
     background-color: $light-primary;
-    background-image: url('../img/bg-hero-afiliados.png');
+    background-image: url('../img/bg-hero-afiliados-mob.png');
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -17,9 +17,18 @@
     /* Set a specific height */
     min-height: 80vh;
 
+    
+    @media only screen and (min-width: 1200px) {
+        background-image: url('../img/bg-hero-afiliados@3x.png');
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+        background-image: url('../img/bg-hero-afiliados@2x.png');
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991.99px) {
+        background-image: url('../img/bg-hero-afiliados.png');
+    }
 
     @media only screen and (max-width: 767.98px) {
-        background-image: url('../img/bg-hero-afiliados-mob.png');
         align-items: flex-start;
         
         padding-top:  calc($pad-space/2);
