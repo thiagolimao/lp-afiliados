@@ -1,0 +1,53 @@
+// General Colors
+$white: #ffffff;
+$black: #000000;
+
+$gray: #949494;
+$light-gray: #d1d1d1;
+$dark-gray: #353535;
+
+/// Default color variables
+$primary: #0079c2;
+$light-primary: lighten($primary, 30%);
+$dark-primary: darken($primary, 0.2%);
+
+$secondary: #ce9a24;
+$light-secondary: #FFB100;
+$dark-secondary: darken($secondary, 0.2%);
+
+$heading-color: $primary;
+$text-color: $primary;
+$light-color: $white;
+
+// Background color
+$bg-light: #f5f5f5;
+$bg-primary: $primary;
+
+// Link Colors
+$links: $text-color;
+$links-hover: lighten($text-color, 0.2%);
+
+/// Fonts Variables
+$font-primary: "Titillium Web", sans-serif;
+
+$font-default: $font-primary;
+$heading-font: $font-primary;
+$text-font: $font-primary;
+
+/// Shadow Variables
+$drop-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+$border-light: #cfdce8;
+
+/// Fonts weight
+$fw-xlight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi: 600;
+$fw-bold: 700;
+$fw-xbold: 800;
+$fw-black: 900;
+
+/// userSpaceOnUse
+$pad-space: 6.25rem;

@@ -1,0 +1,118 @@
+/*--------------------------------------------------------------
+# Section assistencia
+--------------------------------------------------------------*/
+.assistencia-section {
+    display: flex;
+    align-items: center;
+
+    background-color: $light-primary;
+    background-image: url('../img/bg-assistencia.png');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding-top: calc($pad-space*2);
+
+
+    /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+        background-attachment: scroll;
+    }
+
+
+    @media only screen and (max-width: 767.99px) {
+        background-image: url('../img/bg-assistencia-mob.png');
+        min-height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 1.5rem;
+    }
+
+    .card-assistencia {
+        margin-bottom: 1.2rem;
+        + footer {
+            text-align: center;
+            color: $white;
+            p {
+                font-size: 1rem;
+
+                @media only screen and (min-width: 1200px) {
+                    font-size: 1.125rem;
+                }
+            }
+        }
+    }
+
+    header.header-mob {
+        padding: 0 20%;
+        margin-bottom: 0;
+        .title-default {
+            color: $white;
+            text-align: center;
+            font-weight: $fw-bold;
+            .price {
+                color: $light-secondary;
+            }
+        }
+
+        + .infinity-card { 
+            margin: calc($pad-space/4) auto  .8rem;
+            
+            .card-assistencia-item {
+                min-height: 100%;
+                .card-body {
+                    padding: 1.25rem;
+                    align-items: center;
+                    gap: 1rem;
+                    @media only screen and (max-width: 767.99px) {
+                        height: 115px;
+                    }
+                }
+                .ico-rounded {
+                    width: 40px;
+                    height: 40px;
+                    .card-img {
+                        max-width: 20px;
+                    }
+                }
+                .card-title {
+                    @media only screen and (max-width: 767.99px) {
+                        font-size: 0.975rem;
+                    }
+                    @media only screen and (max-width: 375px) {
+                        font-size: 0.875rem;
+                    }
+                }
+                .card-text {
+                    @media only screen and (max-width: 767.99px) {
+                        font-size: 0.875rem;
+                    }
+                    @media only screen and (max-width: 375px) {
+                        font-size: 0.775rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    footer.footer-mob {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 20%;
+        text-align: center;
+
+        p {
+            color: $white;
+            font-size: .725rem;
+            margin-bottom: 0;
+        }
+
+    }
+
+}

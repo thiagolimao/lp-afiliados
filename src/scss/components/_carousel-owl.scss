@@ -1,0 +1,81 @@
+/*--------------------------------------------------------------
+# Components Carousel OWL
+--------------------------------------------------------------*/
+.infinity-card {
+    width: 100%;
+    margin: calc($pad-space/3) auto;
+    overflow: initial;
+    position: relative;
+
+  .cont-carousel {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 70px;
+
+    @media (min-width: 992px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 899.99px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media only screen and (max-width: 767.99px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media only screen and (max-width: 540px) {
+        padding-left: 18%;
+        padding-right: 15%;
+    }
+
+    .infinity-carousel {
+      position: relative;
+
+      .owl-stage-outer {
+        @media only screen and (max-width: 1500px) {
+          overflow: initial;
+          -webkit-clip-path: inset(-100vw -100vw -100vw 0);
+          -moz-clip-path: inset(-100vw -100vw -100vw 0);
+          -ms-clip-path: inset(-100vw -100vw -100vw 0);
+          clip-path: inset(-100vw -100vw -100vw 0);
+        }
+      }
+    }
+  }
+
+    @media only screen and (min-width: 992px)
+    {
+        #owl-porque
+        {
+            .owl-stage-outer {
+                .owl-stage {
+                    .owl-item {
+                        width: 20% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px)
+    {
+        #owl-porque
+        {
+            .owl-stage-outer {
+                .owl-stage {
+                    width: 100% !important;
+                    display: flex;
+                    justify-content: center;
+                    .owl-item {
+                        &:last-child {
+                            margin-right: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

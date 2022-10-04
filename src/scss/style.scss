@@ -1,0 +1,20 @@
+// Base.
+@import "base/variables";
+@import "base/reset";
+@import "base/page";
+@import "base/typography";
+
+// Component.
+@import "components/button";
+@import "components/card";
+@import "components/carousel-owl";
+@import "components/image";
+@import "components/preloader";
+
+// Layout.
+@import "layout/footer";
+
+@import "layout/home/hero";
+@import "layout/home/porque";
+@import "layout/home/cobertura";
+@import "layout/home/assistencia";

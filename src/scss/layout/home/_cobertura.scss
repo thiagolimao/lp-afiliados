@@ -1,0 +1,132 @@
+/*--------------------------------------------------------------
+# Section cobertura
+--------------------------------------------------------------*/
+.cobertura-section {
+    border-radius: 50px;
+    background-color: $primary;
+    padding-bottom: 0;
+    margin-bottom: -50px;
+    z-index: 1;
+
+    * {
+        color: $white;
+    }
+
+    header.section-title {
+        @media only screen and (max-width: 767.99px) {
+            margin-bottom: 0;
+            padding: 0 1.2rem;
+        }
+        .title-default {
+            text-align: center;
+            font-weight: $fw-bold;
+        }
+        .rounded-title {
+            position: relative;
+
+            border: 2px solid $border-light;
+            border-radius: 25px;
+
+            padding: 2rem;
+        
+            @media only screen and (max-width: 540px) {
+                padding: 1rem 1.4rem;
+                .row {
+                    div[class*="col"] {
+                        &:first-child {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+
+            .ico-title {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                margin-right: -30px;
+                margin-top: -30px;
+
+                width: 60px;
+                height: 60px;
+                @media only screen and (max-width: 540px) {
+                    margin-right: -20px;
+                    margin-top: -20px;
+    
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            h3 {
+                font-weight: $fw-bold;
+                // color: $white;
+                line-height: 1.2;
+
+                @media only screen and (min-width: 1200px) {
+                    font-size: 2.25rem;
+                }
+                @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+                    font-size: 2rem;
+                }
+                @media only screen and (min-width: 768px) and (max-width: 991.99px) {
+                    font-size: 1.825rem;
+                }
+                @media only screen and (max-width: 767.99px) {
+                    font-size: 0.975rem;
+                }
+                small {
+                    font-weight: $fw-regular;
+                    display: block;
+
+                    @media only screen and (min-width: 1200px) {
+                        font-size: 1.625rem;
+                    }
+                    @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+                        font-size: 1.425rem;
+                    }
+                    @media only screen and (min-width: 768px) and (max-width: 991.99px) {
+                        font-size: 1.425rem;
+                    }
+                    @media only screen and (max-width: 767.99px) {
+                        font-size: 0.975rem;
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            h4 {
+                font-weight: $fw-bold;
+                // color: $white;
+                line-height: 1.1;
+
+                @media only screen and (min-width: 1200px) {
+                    font-size: 2.375rem;
+                }
+                @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+                    font-size: 2rem;
+                }
+                @media only screen and (min-width: 768px) and (max-width: 991.99px) {
+                    font-size: 1.875rem;
+                }
+            }
+        }
+        + article {
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+            @media only screen and (max-width: 767.99px) {
+                margin-top: 2rem;
+            }
+        }
+    }
+    footer {
+        margin-bottom: -30px;
+        .btn-secondary {
+            &:hover,
+            &:active,
+            &:not(:disabled):not(.disabled):active {
+                background-color: $primary;
+            }
+        }
+    }
+}

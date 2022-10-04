@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+# Components Image
+--------------------------------------------------------------*/
+picture,
+img {
+  display: block;
+
+  &.ico-rounded {
+    border-radius: 50%;
+    background-color: $white;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+  }
+}

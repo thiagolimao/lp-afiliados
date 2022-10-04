@@ -1,0 +1,95 @@
+/*--------------------------------------------------------------
+# Section Hero
+--------------------------------------------------------------*/
+#hero {
+    display: flex;
+    align-items: center;
+
+    background-color: $light-primary;
+    background-image: url('../img/bg-hero-afiliados.png');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Set a specific height */
+    min-height: 80vh;
+
+
+    @media only screen and (max-width: 767.99px) {
+        background-image: url('../img/bg-hero-afiliados-mob.png');
+        align-items: flex-start;
+        
+        padding-top:  calc($pad-space/2);
+    }
+
+
+    /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+        background-attachment: scroll;
+    }
+
+    .section-title {
+        @media only screen and (max-width: 767.99px) {
+            text-align: center;
+        }
+        h1.logo {
+            img { 
+                display: inline-flex;
+                @media only screen and (min-width: 1200px) {
+                    max-width: 168px;
+                }
+                @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+                    max-width: 150px;
+                }
+                @media only screen and (min-width: 768px) and (max-width: 991.99px) {
+                    max-width: 130px;
+                }
+                @media only screen and (max-width: 540px) {
+                    max-width: 106px;
+                }
+            }
+            
+            @media only screen and (max-width: 767.99px) {
+                text-align: center;
+            }
+        }
+        .title-default {
+            @media only screen and (min-width: 1200px) {
+                font-size: 2.625rem;
+            }
+            @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+                font-size: 2.425rem;
+            }
+            @media only screen and (min-width: 768px) and (max-width: 991.99px) {
+                font-size: 2.125rem;
+            }
+            @media only screen and (max-width: 540px) {
+                font-size: 1.75rem;
+
+            }
+        }
+        .subtitle-default {
+            @media only screen and (min-width: 1200px) {
+                font-size: 1.875rem;
+            }
+            @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+                font-size: 1.675rem;
+            }
+            @media only screen and (min-width: 768px) and (max-width: 991.99px) {
+                font-size: 1.475rem;
+            }
+            
+            @media only screen and (max-width: 767.99px) {
+                display: none;
+            }
+            
+        }
+        .title-default,
+        .subtitle-default {
+            color: $white;
+        }
+    }
+}
