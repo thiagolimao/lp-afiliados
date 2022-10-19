@@ -3,46 +3,72 @@
 --------------------------------------------------------------*/
 // MSIE: Required for IEMobile.
 @-ms-viewport {
-  width: device-width;
+    width: device-width;
 }
 
 // MSIE: Prevents scrollbar from overlapping content.
 body {
-  -ms-overflow-style: scrollbar;
+    -ms-overflow-style: scrollbar;
 }
 
 // Ensures page width is always >=320px.
 @media (min-width: 320px) {
-  html,
-  body {
-    min-width: 320px;
-  }
+
+    html,
+    body {
+        min-width: 320px;
+    }
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
-  overflow-x: hidden;
-  box-sizing: border-box;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 body {
-  background: $white;
-  overflow-x: hidden;
+    background: $white;
+    overflow-x: hidden;
 }
 
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
-section{
+section {
     position: relative;
-    padding-top:  calc($pad-space/2);
+    padding-top: calc($pad-space/2);
     padding-bottom: calc($pad-space/2);
+
     .container {
         position: relative;
+    }
+}
+
+
+
+
+h1.logo {
+    background-image: url('../img/logo-mag-peq.svg');
+
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 72px;
+    height: 35px;
+    display: inline-flex;
+
+
+    @media only screen and (min-width: 768px) {
+        background-image: url('../img/logo-mag.svg');
+
+        width: 168px;
+        height: 81px;
     }
 }

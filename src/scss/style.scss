@@ -4,13 +4,29 @@
 @import "base/page";
 @import "base/typography";
 
+// Bootstrap.
+@import "vendor/bootstrap/functions";
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+
+@import "vendor/bootstrap/mixins/breakpoints";
+@import "vendor/bootstrap/mixins/grid-framework";
+@import "vendor/bootstrap/mixins/grid";
+
+@import "vendor/bootstrap/grid";
+@import "vendor/bootstrap/utilities/display";
+@import "vendor/bootstrap/utilities/flex";
+@import "vendor/bootstrap/utilities/spacing";
+
+@import "vendor/bootstrap/buttons";
+@import "vendor/bootstrap/card";
+
 // Component.
 @import "components/button";
 @import "components/card";
 @import "components/carousel-owl";
 @import "components/download";
 @import "components/image";
-@import "components/preloader";
 
 // Layout.
 @import "layout/footer";

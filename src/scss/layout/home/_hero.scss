@@ -5,8 +5,8 @@
     display: flex;
     align-items: center;
 
-    background-color: $light-primary;
-    background-image: url('../img/bg-hero-afiliados-mob.png');
+    background-color: $primary;
+    background-image: url('../img/bg-hero-afiliados-mob.webp');
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -17,21 +17,28 @@
     /* Set a specific height */
     min-height: 80vh;
 
-    
+
     @media only screen and (min-width: 1200px) {
-        background-image: url('../img/bg-hero-afiliados@3x.png');
+        background-image: url('../img/bg-hero-afiliados@3x.webp');
     }
+
     @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
-        background-image: url('../img/bg-hero-afiliados@2x.png');
+        background-image: url('../img/bg-hero-afiliados@2x.webp');
     }
+
     @media only screen and (min-width: 768px) and (max-width: 991.99px) {
-        background-image: url('../img/bg-hero-afiliados.png');
+        background-image: url('../img/bg-hero-afiliados.webp');
     }
 
     @media only screen and (max-width: 767.98px) {
         align-items: flex-start;
-        
-        padding-top:  calc($pad-space/2);
+
+        .container {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        // padding-top:  calc($pad-space/2);
     }
 
 
@@ -40,67 +47,88 @@
         background-attachment: scroll;
     }
 
+
     .section-title {
         @media only screen and (max-width: 767.98px) {
             text-align: center;
         }
+
         h1.logo {
-            img { 
+
+            @media only screen and (max-width: 767.98px) {
+                background-color: $primary;
+                margin: 1.5rem 0;
+            }
+
+            img {
                 display: inline-flex;
+
                 @media only screen and (min-width: 1200px) {
                     max-width: 168px;
                 }
+
                 @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
                     max-width: 150px;
                 }
+
                 @media only screen and (min-width: 768px) and (max-width: 991.99px) {
                     max-width: 130px;
                 }
+
                 @media only screen and (max-width: 540px) {
-                    max-width: 106px;
+                    max-width: 80px;
                 }
             }
-            
+
             @media only screen and (max-width: 767.98px) {
                 text-align: center;
             }
+
             @media only screen and (max-width: 540px) {
-                margin-bottom: 1rem;
+                margin-bottom: 1.5rem;
             }
 
         }
+
         .title-default {
             @media only screen and (min-width: 1200px) {
                 font-size: 2.625rem;
             }
+
             @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
-                font-size: 2.425rem;
+                font-size: 2.225rem;
             }
+
             @media only screen and (min-width: 768px) and (max-width: 991.99px) {
-                font-size: 2.125rem;
+                font-size: 1.975rem;
             }
+
             @media only screen and (max-width: 540px) {
                 font-size: 1.75rem;
-                margin-bottom: 1rem;
+                margin-bottom: 1.5rem;
 
             }
         }
+
         .subtitle-default {
             @media only screen and (min-width: 1200px) {
                 font-size: 1.875rem;
             }
+
             @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
                 font-size: 1.675rem;
             }
+
             @media only screen and (min-width: 768px) and (max-width: 991.99px) {
                 font-size: 1.475rem;
             }
-            
+
             @media only screen and (max-width: 767.98px) {
                 display: none;
             }
-            
+
         }
+
         .title-default,
         .subtitle-default {
             color: $white;

@@ -2,45 +2,51 @@
 # Footer
 --------------------------------------------------------------*/
 #footer {
-    padding-top:  calc($pad-space/2);
+    padding-top: calc($pad-space/2);
     padding-bottom: calc($pad-space/3);
     background-color: $primary;
+
+
     @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
-        padding-top:  calc($pad-space/3);
+        padding-top: calc($pad-space/3);
         padding-bottom: calc($pad-space/5);
     }
+
     @media only screen and (min-width: 768px) and (max-width: 991.99px) {
-        padding-top:  calc($pad-space/3);
+        padding-top: calc($pad-space/3);
         padding-bottom: calc($pad-space/5);
     }
+
     @media only screen and (max-width: 540px) {
-        padding-top:  calc($pad-space/3);
+        padding-top: calc($pad-space/3);
         padding-bottom: calc($pad-space/5);
     }
-    .container-fluid
-    {
-        padding-left:  calc($pad-space/2);
-        padding-right:  calc($pad-space/2);
-    }
-    h1.logo {
-        img { 
-            display: inline-flex;
-            @media only screen and (min-width: 1200px) {
-                max-width: 106px;
-            }
-            @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
-                max-width: 90px;
-            }
-            @media only screen and (min-width: 768px) and (max-width: 991.99px) {
-                max-width: 80px;
-            }
-            @media only screen and (max-width: 540px) {
-                max-width: 90px;
-            }
-        }
-        
+
+    .container-fluid {
+        padding-left: calc($pad-space/2);
+        padding-right: calc($pad-space/2);
+
         @media only screen and (max-width: 767.98px) {
-            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        h1.logo {
+
+            width: 72px;
+            height: 35px;
+
+
+            background-image: url('../img/logo-mag-peq.svg');
+
+            @media only screen and (min-width: 768px) {
+                background-image: url('../img/logo-mag.svg');
+
+                width: 107px;
+                height: 51px;
+            }
+
+
         }
     }
 }

@@ -6,25 +6,27 @@
     align-items: center;
 
     background-color: $light-primary;
-    background-image: url('../img/bg-assistencia-mob.png');
+    background-image: url('../img/bg-assistencia-mob.webp');
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     padding-top: calc($pad-space*2);
 
-    
+
     @media only screen and (min-width: 1200px) {
-        background-image: url('../img/bg-assistencia@3x.png');
+        background-image: url('../img/bg-assistencia@3x.webp');
     }
+
     @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
-        background-image: url('../img/bg-assistencia@2x.png');
+        background-image: url('../img/bg-assistencia@2x.webp');
     }
+
     @media only screen and (min-width: 768px) and (max-width: 991.99px) {
-        background-image: url('../img/bg-assistencia.png');
+        background-image: url('../img/bg-assistencia.webp');
     }
 
 
@@ -44,9 +46,11 @@
 
     .card-assistencia {
         margin-bottom: 1.2rem;
-        + footer {
+
+        +footer {
             text-align: center;
             color: $white;
+
             p {
                 font-size: 1rem;
 
@@ -60,47 +64,57 @@
     header.header-mob {
         padding: 0 20%;
         margin-bottom: 0;
+
         .title-default {
             color: $white;
             text-align: center;
             font-weight: $fw-bold;
+
             .price {
                 color: $light-secondary;
             }
         }
 
-        + .infinity-card { 
-            margin: calc($pad-space/4) auto  .8rem;
-            
+        +.infinity-card {
+            margin: calc($pad-space/4) auto .8rem;
+
             .card-assistencia-item {
                 min-height: 100%;
+
                 .card-body {
                     padding: 1.25rem;
                     align-items: center;
                     gap: 1rem;
+
                     @media only screen and (max-width: 767.98px) {
                         height: 115px;
                     }
                 }
+
                 .ico-rounded {
                     width: 40px;
                     height: 40px;
+
                     .card-img {
                         max-width: 20px;
                     }
                 }
+
                 .card-title {
                     @media only screen and (max-width: 767.98px) {
                         font-size: 0.975rem;
                     }
+
                     @media only screen and (max-width: 375px) {
                         font-size: 0.875rem;
                     }
                 }
+
                 .card-text {
                     @media only screen and (max-width: 767.98px) {
                         font-size: 0.875rem;
                     }
+
                     @media only screen and (max-width: 375px) {
                         font-size: 0.775rem;
                     }
@@ -108,7 +122,7 @@
             }
         }
     }
-    
+
     footer.footer-mob {
         display: flex;
         flex-direction: column;

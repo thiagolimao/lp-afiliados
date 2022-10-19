@@ -2,46 +2,50 @@
 # Base Typography
 --------------------------------------------------------------*/
 body {
-  font-family: $font-default;
-  color: $text-color;
+    font-family: $font-default;
+    color: $text-color;
 }
 
 body,
 input,
 select,
 textarea {
-  font-family: $font-default;
+    font-family: $font-default;
 }
 
 a {
-  color: $links;
-  transition: 0.5s;
-  text-decoration: underline;
+    color: $links;
+    transition: 0.5s;
+    text-decoration: underline;
 
-  &:hover,
-  &:active,
-  &:focus {
-    color: $links-hover;
-    outline: none;
-    text-decoration: none;
-  }
+    &:hover,
+    &:active,
+    &:focus {
+        color: $links-hover;
+        outline: none;
+        text-decoration: none;
+    }
 }
 
 strong,
 b {
-  font-weight: $fw-bold;
+    font-weight: $fw-bold;
 }
 
 em,
 i {
-  font-style: italic;
+    font-style: italic;
 }
 
 p {
-  padding: 0;
-  margin: 0 0 2rem 0;
-  font-weight: $fw-light;
-  line-height: 1.5;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    font-weight: $fw-light;
+    line-height: 1.5;
+}
+
+.txt-mb-none {
+    display: none;
 }
 
 h1,
@@ -52,25 +56,29 @@ h5,
 h6 {
     font-family: $heading-font;
     color: $heading-color;
+
     &.title-default {
         font-weight: $fw-light;
         font-size: 1.375rem;
-        line-height: 1.2; 
+        line-height: 1.2;
 
         @media only screen and (min-width: 1200px) {
             font-size: 2.175rem;
         }
+
         @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
             font-size: 2rem;
         }
+
         @media only screen and (min-width: 768px) and (max-width: 991.99px) {
             font-size: 1.875rem;
         }
-        
+
         @media only screen and (max-width: 540px) {
             font-size: 1.5rem;
         }
     }
+
     &.subtitle-default {
         font-weight: $fw-regular;
         font-size: 1.275rem;
@@ -79,9 +87,11 @@ h6 {
         @media only screen and (min-width: 1200px) {
             font-size: 1.275rem;
         }
+
         @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
             font-size: 1.275rem;
         }
+
         @media only screen and (min-width: 768px) and (max-width: 991.99px) {
             font-size: 1.275rem;
             line-height: 1.2;
@@ -90,38 +100,44 @@ h6 {
 }
 
 .section-title {
-  margin-bottom: 1.5rem;
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    &:not(:last-child) {
-      margin-bottom: 1.5rem;
-    }
-  }
-  &.white {
+    margin-bottom: 1.5rem;
+
     h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
-      color: $white;
-      &:before {
-        background-color: $white;
-      }
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
     }
-  }
-  p:last-child {
-    margin-bottom: 0;
-  }
+
+    &.white {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $white;
+
+            &:before {
+                background-color: $white;
+            }
+        }
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .text-primary {
-  color: $primary !important;
+    color: $primary !important;
 }
+
 .text-secondary {
-  color: $secondary !important;
+    color: $secondary !important;
 }
