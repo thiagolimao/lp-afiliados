@@ -58,7 +58,7 @@ function compileHTML() {
     var js_links = '';
     for (let dependency in dependencies) {
         if (dependencies[dependency].css_link !== undefined) {
-            css_links += '<link href="' + dependencies[dependency].css_link + '" rel="stylesheet">';
+            css_links += '<link media="all" href="' + dependencies[dependency].css_link + '" rel="stylesheet">';
         }
         if (dependencies[dependency].js_link !== undefined) {
             js_links += '<script src="' + dependencies[dependency].js_link + '"></script>';
