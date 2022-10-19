@@ -56,7 +56,12 @@
         h1.logo {
 
             @media only screen and (max-width: 767.98px) {
-                margin: 1.3rem 0 2.8rem;
+                margin-bottom: 1.5rem;
+                min-height: 75px;
+                background-color: $primary;
+                min-width: 100%;
+                background-size: 20%;
+                background-image: url('../img/logo-mag.svg');
             }
 
         }

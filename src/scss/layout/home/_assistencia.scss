@@ -78,17 +78,29 @@
         +.infinity-card {
             margin: calc($pad-space/4) auto .8rem;
 
+
+            @media only screen and (max-width: 540px) {
+                .cont-carousel {
+                    padding-left: 10%;
+                }
+            }
+
             .card-assistencia-item {
                 min-height: 100%;
 
                 .card-body {
-                    padding: 1.25rem;
+                    padding: 1.2rem;
                     align-items: center;
                     gap: 1rem;
 
                     @media only screen and (max-width: 767.98px) {
                         height: 115px;
                     }
+
+                    // @media only screen and (max-width: 425px) {
+                    //     padding: 1.2rem 1rem;
+                    //     gap: .5rem;
+                    // }
                 }
 
                 .ico-rounded {
