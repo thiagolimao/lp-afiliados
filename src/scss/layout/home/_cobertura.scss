@@ -18,6 +18,10 @@
             padding: 0 1rem;
         }
 
+        @media only screen and (max-width: 375px) {
+            padding: 0;
+        }
+
         .title-default {
             text-align: center;
             font-weight: $fw-bold;
@@ -30,6 +34,11 @@
             border-radius: 25px;
 
             padding: 2rem;
+
+            @media only screen and (min-width: 1200px) {
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
 
             @media only screen and (max-width: 540px) {
                 padding: 1rem 1.2rem;
