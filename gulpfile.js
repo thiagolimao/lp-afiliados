@@ -108,6 +108,7 @@ function compileJS() {
         .pipe(browserSync.stream());
 }
 
+// Task: MinifyJS
 function minifyJS() {
     return gulp.src('./src/assets/js/main.js', { allowEmpty: true })
         .pipe(minify({ noSource: true }))
