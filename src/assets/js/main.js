@@ -71,12 +71,12 @@ jQuery.event.special.mousewheel = {
             margin: 22,
             responsive: {
                 0: {
-                    items: 1,
+                    items: 1.01,
                     margin: 25,
                     loop: true
                 },
                 540: {
-                    items: 1.5,
+                    items: 1.25,
                     margin: 25,
                     loop: true
                 },
@@ -89,16 +89,8 @@ jQuery.event.special.mousewheel = {
         });
     }
 
-    // Init AOS
-    function aos_init() {
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    }
 
     $(window).on('load', function () {
-        aos_init();
         owlPorque();
         owlAssistencia();
     });

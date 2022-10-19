@@ -7,12 +7,6 @@
         "dest": "assets/vendor/jquery/",
         "js_link": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     },
-    "aos": {
-        "src": "./node_modules/aos/dist/**/*",
-        "dest": "assets/vendor/aos/",
-        "css_link": "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css",
-        "js_link": "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-    },
     "owl-carousel": {
         "src": "./node_modules/owl.carousel/dist/**/*",
         "dest": "assets/vendor/owl-carousel/",
