@@ -56,36 +56,7 @@
         h1.logo {
 
             @media only screen and (max-width: 767.98px) {
-                background-color: $primary;
-                margin: 1.3rem 0 1.5rem;
-            }
-
-            img {
-                display: inline-flex;
-
-                @media only screen and (min-width: 1200px) {
-                    max-width: 168px;
-                }
-
-                @media only screen and (min-width: 992px) and (max-width: 1199.99px) {
-                    max-width: 150px;
-                }
-
-                @media only screen and (min-width: 768px) and (max-width: 991.99px) {
-                    max-width: 130px;
-                }
-
-                @media only screen and (max-width: 540px) {
-                    max-width: 80px;
-                }
-            }
-
-            @media only screen and (max-width: 767.98px) {
-                text-align: center;
-            }
-
-            @media only screen and (max-width: 540px) {
-                margin-bottom: 1.5rem;
+                margin: 1.3rem 0 2.8rem;
             }
 
         }
